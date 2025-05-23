@@ -4,7 +4,7 @@ subtitle: "5 pm workshop"
 author: "Max Tu"
 date: "insert your name here"
 format: html
-    toc: true # use this to display a table of contents
+toc: true # use this to display a table of contents
 execute:
   message: false # use this to make sure messages don't show up
   warning: false # use this to make sure warnings don't show up
@@ -345,9 +345,10 @@ Across water treatments, all species have different (and higher) masses than *Lo
 ```{r model-predictions}
 model4_predictions <- ggpredict(
   model4, # model object
-  terms = c("species_name", "water_treatment") |> # predictors
+  terms = c("species_name", "water_treatment")) |> # predictors
   rename(species_name = x,
-         water_treatment = group))
+         water_treatment = group)
+  
 
 ```
 
