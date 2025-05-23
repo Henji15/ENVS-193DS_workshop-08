@@ -3,8 +3,7 @@ title: "Workshop 8 TEMPLATE"
 subtitle: "5 pm workshop"
 author: "Max Tu"
 date: "insert your name here"
-format:
-  html:
+format: html
     toc: true # use this to display a table of contents
 execute:
   message: false # use this to make sure messages don't show up
